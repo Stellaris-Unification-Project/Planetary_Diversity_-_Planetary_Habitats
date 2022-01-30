@@ -102,8 +102,8 @@ country_event = {
 				NOR = {
 					has_modifier = pdhabsubglacialocean
 					has_modifier = pdterra_geothermal
+					has_modifier = pdterra_aquatic
 				}
-				not = { has_modifier = pdterra_aquatic }
 				planet_size > 9
 				planet_size < 26	
 				solar_system = {
