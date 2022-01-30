@@ -99,8 +99,10 @@ country_event = {
 		every_galaxy_planet = { 
 			limit = {  
 				is_planet_class = pc_frozen
-				not = { has_modifier = pdhabsubglacialocean }	
-				not = { has_modifier = pdterra_geothermal }
+				NOR = {
+					has_modifier = pdhabsubglacialocean
+					has_modifier = pdterra_geothermal
+				}
 				not = { has_modifier = pdterra_aquatic }
 				planet_size > 9
 				planet_size < 26	

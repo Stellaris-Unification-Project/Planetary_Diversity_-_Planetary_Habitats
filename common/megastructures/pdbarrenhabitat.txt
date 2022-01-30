@@ -40,7 +40,7 @@ pd_barren_hab_0 = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_existing_megastructure"
@@ -64,7 +64,7 @@ pd_barren_hab_0 = {
  			# balance for habitats
 			custom_tooltip = {
 				fail_text = "requires_not_minor_planetary_body"
-				NOT = {	is_asteroid = yes }
+				is_asteroid = no
 			}
             custom_tooltip = {
                 fail_text = "requires_different_size"
@@ -690,8 +690,10 @@ pd_barren_hab_0 = {
 				limit = {
 					is_planet_class = pc_pd_barren_cold_hab
 					is_moon = yes
-					NOT = { has_planet_flag = pdluna }
-					NOT = { has_planet_flag = pdhab_diamond }
+					NOR = {
+						has_planet_flag = pdluna
+						has_planet_flag = pdhab_diamond
+					}
 				}
 				set_planet_entity = {
 					entity = "pdcmoon_planet_01_entity"

@@ -40,7 +40,7 @@ pd_gas_giant_hab_0 = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_existing_megastructure"
@@ -64,7 +64,7 @@ pd_gas_giant_hab_0 = {
  			# balance for habitats
 			custom_tooltip = {
 				fail_text = "requires_not_minor_planetary_body"
-				NOT = {	is_asteroid = yes }
+				is_asteroid = no
 			}
 			custom_tooltip = {
 				fail_text = "requires_not_star"
